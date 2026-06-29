@@ -1,12 +1,12 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #B39DDB;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #4a90e2;
+    background-color: #F8F5FF;
     color: white;
     text-align: center;
     padding: 30px;
@@ -21,11 +21,11 @@ section {
 }
 
 h2 {
-    color: #4a90e2;
+    color: #B39DDB;
 }
 
 button {
-    background-color: #4a90e2;
+    background-color: #B39DDB;
     color: white;
     border: none;
     padding: 12px 20px;
