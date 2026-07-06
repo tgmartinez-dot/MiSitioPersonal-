@@ -69,3 +69,11 @@ ul {
     line-height: 1.8;
 }5CD;
 }
+
+footer{
+    background #9575CD;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
