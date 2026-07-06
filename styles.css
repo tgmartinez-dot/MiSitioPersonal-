@@ -1,103 +1,142 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #F8F5FF;
-    margin: 0;
-    padding: 0;
-    color: #333;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-header {
-    background: linear-gradient(135deg, #B39DDB, #9575CD);
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
+body{
+    font-family:Arial, sans-serif;
+    background:#F8F5FF;
+    color:#333;
+    line-height:1.6;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 42px;
-    transition: all 0.4s ease;
-    cursor: pointer;
-}
-
-header h1:hover {
-    transform: scale(1.08);
-    letter-spacing: 3px;
-    color: #F3E5F5;
-}
-
-header p {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-section {
-    background: white;
-    width: 85%;
-    margin: 25px auto;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,.10);
-    transition: 0.3s;
-}
-
-section:hover {
-    transform: translateY(-5px);
-}
-
-h2 {
-    color: #7E57C2;
-}
-
-button {
-    background-color: #B39DDB;
-    color: white;
-    border: none;
-    padding: 12px 22px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #9575CD;
-    transform: scale(1.05);
-}
-
-ul {
-    line-height: 1.8;
-}5CD;
-}
-
-footer{
-    background: #9575CD;
+/* Encabezado */
+.site-header{
+    background:linear-gradient(135deg,#B39DDB,#9575CD);
     color:white;
     text-align:center;
-    padding:20px;
-    margin-top:30px;
+    padding:40px 20px;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
 }
 
+.site-header h1{
+    font-size:48px;
+    margin-bottom:10px;
+    transition:.3s;
+}
+
+.site-header h1:hover{
+    transform:scale(1.05);
+    letter-spacing:2px;
+}
+
+.site-header p{
+    font-size:18px;
+}
+
+/* Menú */
 nav{
-    background: #9575CD;
-    padding: 15px 0;
+    margin-top:25px;
 }
 
 nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:30px;
+    flex-wrap:wrap;
 }
 
 nav a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    padding:10px 15px;
+    border-radius:8px;
+    transition:.3s;
 }
 
 nav a:hover{
-    color: #F3E5F5;
+    background:white;
+    color:#7E57C2;
+}
+
+/* Contenedor principal */
+main{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+}
+
+/* Tarjetas */
+section{
+    background:white;
+    padding:30px;
+    margin-bottom:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.10);
+    transition:.3s;
+}
+
+section:hover{
+    transform:translateY(-5px);
+}
+
+section h2{
+    color:#7E57C2;
+    margin-bottom:15px;
+}
+
+/* Lista */
+ul{
+    margin-left:25px;
+}
+
+/* Proyectos */
+article{
+    background:#F3ECFF;
+    padding:20px;
+    margin-top:15px;
+    border-radius:10px;
+}
+
+/* Botón */
+button{
+    background:#9575CD;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#7E57C2;
+    transform:scale(1.05);
+}
+
+/* Pie */
+footer{
+    background:#9575CD;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .site-header h1{
+        font-size:34px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:15px;
+    }
+
 }
