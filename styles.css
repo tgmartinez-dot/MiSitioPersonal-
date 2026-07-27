@@ -166,3 +166,44 @@ tr:nth-child(even){
 tr:hover{
     background:#EDE7F6;
 }
+
+
+    section{
+    animation: aparecer .8s ease;
+}
+
+@keyframes aparecer{
+
+from{
+    opacity:0;
+    transform:translateY(25px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+    @media(max-width:768px){
+
+.site-header h1{
+    font-size:34px;
+}
+
+nav ul{
+    flex-direction:column;
+    gap:15px;
+}
+
+table{
+    font-size:14px;
+}
+
+button{
+    width:100%;
+    margin-top:10px;
+}
+
+}
