@@ -117,26 +117,21 @@ button:hover{
 }
 
 table{
-    width:100%;
+    width:60%;
+    margin:20px auto;
     border-collapse:collapse;
-    margin-top:20px;
-    background:#FFFFFF;
-    border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
 }
 
 th{
     background:#9575CD;
     color:white;
-    padding:14px;
-    font-size:17px;
+    padding:12px;
 }
 
 td{
-    padding:14px;
+    padding:10px;
+    text-align:left;
     border-bottom:1px solid #E6E6E6;
-    text-align:center;
 }
 
 tr:nth-child(even){
@@ -145,7 +140,6 @@ tr:nth-child(even){
 
 tr:hover{
     background:#EDE7F6;
-    transition:.3s;
 }
 
 footer{
