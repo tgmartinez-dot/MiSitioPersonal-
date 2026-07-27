@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea Martínez | Sitio Personal</title>
-
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -32,23 +31,24 @@
 
 <main>
 
-    
-    
-
     <section id="inicio">
 
         <h2>¡Hola! Soy Tea Martínez</h2>
-        <button onclick="mostrarMensaje()">Conóceme mejor</button>
 
-<p id="mensaje"></p>
+        <p id="mensaje">
+            Bienvenido(a) a mi sitio web personal. Aquí conocerás un poco sobre mi formación y mis proyectos.
+        </p>
 
-    </section>
+        <button onclick="cambiarMensaje()">
+            Cambiar mensaje
+        </button>
 
+        <button onclick="contarClicks()">
+            Me gusta este sitio
+        </button>
 
-        <p>
-            Bienvenido(a) a mi sitio web personal. Aquí compartiré información
-            sobre mi formación, habilidades y los proyectos que desarrollaré
-            durante la Licenciatura en Programación y Transformación Digital.
+        <p id="contador">
+            Número de clics: 0
         </p>
 
     </section>
@@ -58,10 +58,10 @@
         <h2>Sobre mí</h2>
 
         <p>
-            Soy estudiante de la Licenciatura en Programación y Transformación
-            Digital en la Escuela Bancaria y Comercial (EBC). Me interesa el
-            desarrollo web, las bases de datos y el aprendizaje de nuevas
-            tecnologías para crear soluciones digitales.
+            Soy estudiante de la Licenciatura en Programación y Transformación Digital
+            en la Escuela Bancaria y Comercial (EBC). Me interesa el desarrollo web,
+            las bases de datos y el aprendizaje de nuevas tecnologías para crear
+            soluciones digitales.
         </p>
 
     </section>
@@ -78,68 +78,89 @@
             <li>Git y GitHub</li>
         </ul>
 
-    <table>
-    <tr>
-        <th>Tecnología</th>
-        <th>Nivel</th>
-    </tr>
+        <table>
 
-    <tr>
-        <td>HTML</td>
-        <td>Básico</td>
-    </tr>
+            <tr>
+                <th>Tecnología</th>
+                <th>Nivel</th>
+            </tr>
 
-    <tr>
-        <td>CSS</td>
-        <td>Básico</td>
-    </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Básico</td>
+            </tr>
 
-    <tr>
-        <td>JavaScript</td>
-        <td>En aprendizaje</td>
-    </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Básico</td>
+            </tr>
 
-    <tr>
-        <td>SQL</td>
-        <td>Intermedio</td>
-    </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>En aprendizaje</td>
+            </tr>
 
-    <tr>
-        <td>Git y GitHub</td>
-        <td>Básico</td>
-    </tr>
-</table>
-           </section>
+            <tr>
+                <td>SQL</td>
+                <td>Intermedio</td>
+            </tr>
 
-   <section id="proyectos">
+            <tr>
+                <td>Git y GitHub</td>
+                <td>Básico</td>
+            </tr>
 
-    <h2>Mis proyectos</h2>
+        </table>
 
-    <article>
-        <h3>Sitio Web Personal</h3>
+    </section>
 
-        <p>
-            Proyecto desarrollado para la materia de Implementación y Diseño Web.
-        </p>
+    <section id="proyectos">
 
-        <button onclick="mostrarProyecto()">
-            Ver detalles
-        </button>
+        <h2>Mis proyectos</h2>
 
-        <p id="detalleProyecto"></p>
+        <article>
 
-    </article>
+            <h3>Sitio Web Personal</h3>
 
-</section>
+            <p>
+                Proyecto desarrollado para la materia de Implementación y Diseño Web.
+            </p>
+
+            <button onclick="mostrarProyecto()">
+                Ver detalles
+            </button>
+
+            <div id="detalleProyecto" style="display:none;">
+
+                <p>
+                    Este sitio web fue desarrollado utilizando HTML, CSS y JavaScript.
+                    Su objetivo es presentar mi información personal y demostrar los
+                    conocimientos adquiridos durante el curso.
+                </p>
+
+            </div>
+
+        </article>
+
+    </section>
 
     <section id="contacto">
 
         <h2>Contacto</h2>
 
-        <p>
-            Gracias por visitar mi sitio web.
-        </p>
+        <form onsubmit="return validarFormulario()">
 
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre"><br><br>
+
+            <label for="correo">Correo electrónico</label><br>
+            <input type="email" id="correo"><br><br>
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </form>
 
     </section>
 
@@ -148,7 +169,7 @@
 <footer>
 
     <p>
-        2026 Tea Martínez | Sitio Web Personal
+        ©️ 2026 Tea Martínez | Sitio Web Personal
     </p>
 
 </footer>
@@ -156,5 +177,4 @@
 <script src="script.js"></script>
 
 </body>
-
 </html>
