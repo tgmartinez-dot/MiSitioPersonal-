@@ -5,13 +5,13 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
+    font-family:'Poppins', sans-serif;
     background:#F8F5FF;
     color:#333;
     line-height:1.6;
 }
 
-/* Encabezado */
+
 .site-header{
     background:linear-gradient(135deg,#B39DDB,#9575CD);
     color:white;
@@ -35,7 +35,7 @@ body{
     font-size:18px;
 }
 
-/* Menú */
+
 nav{
     margin-top:25px;
 }
@@ -62,14 +62,14 @@ nav a:hover{
     color:#7E57C2;
 }
 
-/* Contenedor principal */
+
 main{
     width:90%;
     max-width:1100px;
     margin:40px auto;
 }
 
-/* Tarjetas */
+
 section{
     background:white;
     padding:30px;
@@ -88,12 +88,12 @@ section h2{
     margin-bottom:15px;
 }
 
-/* Lista */
+
 ul{
     margin-left:25px;
 }
 
-/* Proyectos */
+
 article{
     background:#F3ECFF;
     padding:20px;
@@ -101,7 +101,6 @@ article{
     border-radius:10px;
 }
 
-/* Botón */
 button{
     background:#9575CD;
     color:white;
@@ -118,7 +117,6 @@ button:hover{
     transform:scale(1.05);
 }
 
-/* Pie */
 footer{
     background:#9575CD;
     color:white;
@@ -127,7 +125,7 @@ footer{
     margin-top:40px;
 }
 
-/* Responsive */
+
 @media(max-width:768px){
 
     .site-header h1{
