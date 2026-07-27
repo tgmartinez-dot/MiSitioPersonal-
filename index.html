@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea Martínez | Sitio Personal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Mi Sitio Personal - Tea Martínez</title>
+
     <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header class="site-header">
+<header>
 
-    <div class="container">
-        <h1>Tea Martínez</h1>
-        <p>Estudiante de Programación y Transformación Digital</p>
-    </div>
+    <h1>Tea Martínez</h1>
+
+    <p>Estudiante de Programación y Transformación Digital</p>
 
     <nav>
         <ul>
@@ -32,89 +30,133 @@
 
 </header>
 
-<main>
+<section id="inicio">
 
-    <section id="inicio">
+    <div class="inicio-texto">
 
-        <h2>¡Hola! Soy Tea Martínez</h2>
+        <h2>¡Hola! 👋</h2>
 
-        <p id="mensaje">
-            Bienvenido(a) a mi sitio web personal. Aquí conocerás un poco sobre mi formación y mis proyectos.
+        <p>
+            Bienvenido(a) a mi sitio web personal.
+            Aquí encontrarás información sobre mi formación académica,
+            las tecnologías que estoy aprendiendo y algunos de los
+            proyectos que he desarrollado durante mi carrera.
         </p>
 
         <button onclick="contarClicks()">
-            Me gusta este sitio
+            Me interesa este sitio
         </button>
 
         <p id="contador">
             Número de clics: 0
         </p>
 
-    </section>
+    </div>
 
-    <section id="sobre-mi">
+    <div class="inicio-imagen">
 
-        <h2>Sobre mí</h2>
+        <img
+        src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png"
+        alt="Avatar Programadora">
 
-        <p>
-            Soy estudiante de la Licenciatura en Programación y Transformación Digital
-            en la Escuela Bancaria y Comercial (EBC). Me interesa el desarrollo web,
-            las bases de datos y el aprendizaje de nuevas tecnologías para crear
-            soluciones digitales.
-        </p>
+    </div>
 
-    </section>
+</section>
 
-    <section id="habilidades">
+<section id="sobre-mi">
 
-        <h2>Mis habilidades</h2>
+    <div class="sobre">
 
-        <table>
+        <div class="texto">
 
-            <tr>
-                <th>Tecnología</th>
-                <th>Nivel</th>
-            </tr>
+            <h2>Sobre mí</h2>
 
-            <tr>
-                <td>HTML</td>
-                <td>Básico</td>
-            </tr>
+            <p>
 
-            <tr>
-                <td>CSS</td>
-                <td>Básico</td>
-            </tr>
+                Soy estudiante de la Licenciatura en Programación y
+                Transformación Digital.
 
-            <tr>
-                <td>JavaScript</td>
-                <td>En aprendizaje</td>
-            </tr>
+            </p>
 
-            <tr>
-                <td>SQL</td>
-                <td>Intermedio</td>
-            </tr>
+            <p>
 
-            <tr>
-                <td>Git y GitHub</td>
-                <td>Básico</td>
-            </tr>
+                Me interesa el desarrollo web, el diseño de interfaces,
+                las bases de datos y la mejora continua de procesos
+                mediante soluciones tecnológicas.
 
-        </table>
+            </p>
 
-    </section>
+            <p>
+
+                Actualmente continúo fortaleciendo mis conocimientos en
+                HTML, CSS, JavaScript y herramientas para el desarrollo
+                de aplicaciones web.
+
+            </p>
+
+        </div>
+
+        <img
+        src="https://cdn-icons-png.flaticon.com/512/6997/6997662.png"
+        alt="Avatar">
+
+    </div>
+
+</section>
+
+<section id="habilidades">
+
+    <h2>Habilidades</h2>
+
+    <table>
+
+        <tr>
+            <th>Tecnología</th>
+            <th>Nivel</th>
+        </tr>
+
+        <tr>
+            <td>HTML5</td>
+            <td>Intermedio</td>
+        </tr>
+
+        <tr>
+            <td>CSS3</td>
+            <td>Intermedio</td>
+        </tr>
+
+        <tr>
+            <td>JavaScript</td>
+            <td>Básico</td>
+        </tr>
+
+        <tr>
+            <td>Git y GitHub</td>
+            <td>Básico</td>
+        </tr>
+
+        <tr>
+            <td>MySQL / MariaDB</td>
+            <td>Intermedio</td>
+        </tr>
+
+    </table>
+
+</section>
 
     <section id="proyectos">
 
-        <h2>Mis proyectos</h2>
+    <h2>Mis proyectos</h2>
 
-        <article>
+    <div class="contenedor-proyectos">
 
-            <h3>Sitio Web Personal</h3>
+        <article class="tarjeta">
+
+            <h3>Mi Sitio Web Personal</h3>
 
             <p>
-                Proyecto desarrollado para la materia de Implementación y Diseño Web.
+                Sitio desarrollado con HTML, CSS y JavaScript como parte
+                de la materia de Implementación y Diseño Web.
             </p>
 
             <button onclick="mostrarProyecto()">
@@ -124,43 +166,85 @@
             <div id="detalleProyecto" style="display:none;">
 
                 <p>
-                    Este sitio web fue desarrollado utilizando HTML, CSS y JavaScript.
-                    Su objetivo es presentar mi información personal y demostrar los
-                    conocimientos adquiridos durante el curso.
+                    Este proyecto incluye diseño responsivo,
+                    validación de formularios, manipulación del DOM,
+                    contador de clics y publicación mediante GitHub Pages.
                 </p>
 
             </div>
 
         </article>
 
-    </section>
+        <article class="tarjeta">
 
-    <section id="contacto">
+            <h3>Próximos proyectos</h3>
 
-        <h2>Contacto</h2>
+            <p>
+                En este espacio agregaré los proyectos que desarrollaré
+                durante mi formación profesional.
+            </p>
 
-        <form onsubmit="return validarFormulario()">
+            <ul>
+                <li>Sistemas web.</li>
+                <li>Bases de datos.</li>
+                <li>Aplicaciones con JavaScript.</li>
+                <li>Interfaces responsivas.</li>
+            </ul>
 
-            <label for="nombre">Nombre</label><br>
-            <input type="text" id="nombre"><br><br>
+        </article>
 
-            <label for="correo">Correo electrónico</label><br>
-            <input type="email" id="correo"><br><br>
+    </div>
 
-            <button type="submit">
-                Enviar
-            </button>
+</section>
 
-        </form>
+<section id="contacto">
 
-    </section>
+    <h2>Contacto</h2>
 
-</main>
+    <form id="formulario">
+
+        <label for="nombre">
+            Nombre
+        </label>
+
+        <input
+            type="text"
+            id="nombre"
+            placeholder="Escribe tu nombre"
+            required>
+
+        <label for="correo">
+            Correo electrónico
+        </label>
+
+        <input
+            type="email"
+            id="correo"
+            placeholder="ejemplo@correo.com"
+            required>
+
+        <label for="mensaje">
+            Mensaje
+        </label>
+
+        <textarea
+            id="mensaje"
+            rows="5"
+            placeholder="Escribe tu mensaje"
+            required></textarea>
+
+        <button type="submit">
+            Enviar
+        </button>
+
+    </form>
+
+</section>
 
 <footer>
 
     <p>
-        ©️ 2026 Tea Martínez | Sitio Web Personal
+        ©️ 2026 Tea Martínez | Sitio web desarrollado con HTML, CSS y JavaScript.
     </p>
 
 </footer>
