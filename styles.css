@@ -11,7 +11,6 @@ body{
     line-height:1.6;
 }
 
-
 .site-header{
     background:linear-gradient(135deg,#B39DDB,#9575CD);
     color:white;
@@ -34,7 +33,6 @@ body{
 .site-header p{
     font-size:18px;
 }
-
 
 nav{
     margin-top:25px;
@@ -62,13 +60,11 @@ nav a:hover{
     color:#7E57C2;
 }
 
-
 main{
     width:90%;
     max-width:1100px;
     margin:40px auto;
 }
-
 
 section{
     background:white;
@@ -77,6 +73,8 @@ section{
     padding:35px;
     border-radius:18px;
     box-shadow:0 6px 18px rgba(0,0,0,.10);
+    animation:aparecer .8s ease;
+    transition:.3s;
 }
 
 section:hover{
@@ -85,25 +83,23 @@ section:hover{
 
 section h2{
     color:#7E57C2;
-    texr-align:center;
+    text-align:center;
     margin-bottom:25px;
 }
-
 
 ul{
     margin-left:25px;
 }
-
 
 article{
     background:#F3ECFF;
     padding:20px;
     margin-top:15px;
     border-radius:10px;
+}
 
-    
 button{
-    background: linear-gradient(135deg,#9575CD,#7E57C2);
+    background:linear-gradient(135deg,#9575CD,#7E57C2);
     color:white;
     border:none;
     padding:12px 22px;
@@ -119,96 +115,6 @@ button:hover{
     transform:translateY(-3px);
     box-shadow:0 8px 18px rgba(0,0,0,.25);
 }
-
-footer{
-    background:#9575CD;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
-}
-
-
-@media(max-width:768px){
-
-    .site-header h1{
-        font-size:34px;
-    }
-
-    nav ul{
-        flex-direction:column;
-        gap:15px;
-    }
-
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:20px;
-}
-
-th{
-    background:#9575CD;
-    color:white;
-    padding:12px;
-}
-
-td{
-    border:1px solid #ddd;
-    padding:10px;
-    text-align:center;
-}
-
-tr:nth-child(even){
-    background:#F3E5F5;
-}
-
-tr:hover{
-    background:#EDE7F6;
-}
-
-
-    section{
-    animation: aparecer .8s ease;
-}
-
-@keyframes aparecer{
-
-from{
-    opacity:0;
-    transform:translateY(25px);
-}
-
-to{
-    opacity:1;
-    transform:translateY(0);
-}
-
-}
-
-    @media(max-width:768px){
-
-.site-header h1{
-    font-size:34px;
-}
-
-nav ul{
-    flex-direction:column;
-    gap:15px;
-}
-
-table{
-    font-size:14px;
-}
-
-button{
-    width:100%;
-    margin-top:10px;
-}
-
-}
-
 
 table{
     width:100%;
@@ -230,6 +136,7 @@ th{
 td{
     padding:14px;
     border-bottom:1px solid #E6E6E6;
+    text-align:center;
 }
 
 tr:nth-child(even){
@@ -239,4 +146,52 @@ tr:nth-child(even){
 tr:hover{
     background:#EDE7F6;
     transition:.3s;
+}
+
+footer{
+    background:#9575CD;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@keyframes aparecer{
+
+from{
+    opacity:0;
+    transform:translateY(25px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+@media(max-width:768px){
+
+.site-header h1{
+    font-size:34px;
+}
+
+nav ul{
+    flex-direction:column;
+    gap:15px;
+}
+
+table{
+    font-size:14px;
+}
+
+button{
+    width:100%;
+    margin-top:10px;
+}
+
+section{
+    padding:20px;
+}
+
 }
