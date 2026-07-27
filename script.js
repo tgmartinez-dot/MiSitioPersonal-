@@ -1,49 +1,53 @@
 let contador = 0;
 
-function cambiarMensaje() {
-    const mensaje = document.getElementById("mensaje");
-
-    if (mensaje.innerHTML.includes("Bienvenido")) {
-        mensaje.innerHTML = "¡Gracias por visitar mi portafolio! Espero que disfrutes conocer más sobre mí y mis proyectos.";
-    } else {
-        mensaje.innerHTML = "Bienvenido(a) a mi sitio web personal. Aquí conocerás un poco sobre mi formación y mis proyectos.";
-    }
-}
-
 function contarClicks() {
+
     contador++;
-    document.getElementById("contador").innerHTML = "Número de clics: " + contador;
+
+    document.getElementById("contador").textContent =
+        "Número de clics: " + contador;
+
 }
+
 
 function mostrarProyecto() {
-    const detalle = document.getElementById("detalleProyecto");
 
-    if (detalle.style.display === "none") {
+    let detalle = document.getElementById("detalleProyecto");
+
+    if (detalle.style.display === "none" || detalle.style.display === "") {
+
         detalle.style.display = "block";
-    } else {
-        detalle.style.display = "none";
-    }
-}
 
-function validarFormulario() {
+    } else {
+
+        detalle.style.display = "none";
+
+    }
+
+
+
+const formulario = document.getElementById("formulario");
+
+formulario.addEventListener("submit", function(event){
+
+    event.preventDefault();
 
     let nombre = document.getElementById("nombre").value.trim();
     let correo = document.getElementById("correo").value.trim();
+    let mensaje = document.getElementById("mensaje").value.trim();
 
-    if (nombre === "" || correo === "") {
+    if(nombre === "" || correo === "" || mensaje === ""){
+
         alert("Por favor completa todos los campos.");
-        return false;
+
+        return;
+
     }
 
-    if (!correo.includes("@") || !correo.includes(".")) {
-        alert("Ingresa un correo electrónico válido.");
-        return false;
-    }
+    alert("¡Gracias por tu mensaje, " + nombre + "! Me pondré en contacto contigo pronto.");
 
-    alert("¡Gracias, " + nombre + "! Tu mensaje fue enviado correctamente.");
+    formulario.reset();
 
-    document.getElementById("nombre").value = "";
-    document.getElementById("correo").value = "";
-
+});
     return false;
 }
